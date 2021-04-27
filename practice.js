@@ -110,3 +110,26 @@ const temperatureCheck = (x) => {
 // Driver code
 let str = "gaass";
 console.log(firstRepeating(str));
+
+// Write a function which calculates the average of the numbers in a given list.
+
+// Note: Empty arrays should return 0.
+const array1 = [1,2,4]
+
+const find_average = (array) => {
+ 
+    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+    let numberIWant = array.reduce(reducer);
+    let answerHopefully = numberIWant / array.length;
+  
+
+  return answerHopefully;
+  
+}
+ 
+
+
+const test = find_average(array1)
+
+console.log(test)
